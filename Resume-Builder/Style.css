@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#bcdaf8,#ffffff);
+    padding:30px;
+}
+
+form{
+    width:70%;
+    max-width:850px;
+    margin:auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:25px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+h2{
+    color:#1565c0;
+    margin-top:20px;
+    margin-bottom:15px;
+    border-left:5px solid #1565c0;
+    padding-left:10px;
+}
+
+hr{
+    margin:20px 0;
+    border:0;
+    border-top:2px solid #dcdcdc;
+}
+
+label{
+    font-weight:bold;
+    color:#000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+textarea,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:15px;
+    border:1px solid #bdbdbd;
+    border-radius:6px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#1976d2;
+    outline:none;
+    box-shadow:0 0 6px rgba(25,118,210,0.4);
+}
+
+textarea{
+    resize:vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right:5px;
+    margin-left:12px;
+    transform:scale(1.1);
+}
+
+input[type="radio"]:first-child,
+input[type="checkbox"]:first-child{
+    margin-left:0;
+}
+
+input[type="file"]{
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    padding:12px 28px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    margin-right:15px;
+}
+
+input[type="submit"]{
+    background:#1565c0;
+    color:white;
+}
+
+input[type="submit"]:hover{
+    background:#0d47a1;
+}
+
+input[type="reset"]{
+    background:#e53935;
+    color:white;
+}
+
+input[type="reset"]:hover{
+    background:#b71c1c;
+}
+
+::placeholder{
+    color:#888;
+}
+
+select[multiple]{
+    height:120px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    form{
+        width:100%;
+        padding:20px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    input[type="submit"],
+    input[type="reset"]{
+        width:100%;
+        margin-bottom:10px;
+    }
+}
